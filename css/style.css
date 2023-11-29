@@ -1,0 +1,452 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 1rem;
+}
+main{
+    background-image: url("../assets/img/fondo-de-pantalla-inicio.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    padding: 0px 20px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    
+}
+
+.button a{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    margin-top: 50px;
+    font-size: 30px;
+    border-radius: 30px;
+}
+.nav-bar{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    color: white;
+    justify-content: space-between;
+    }
+.nav-bar ul li{
+    display: inline;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(248, 244, 244);
+    font-size: 20px;
+    gap: 1.25rem;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px ;
+}
+.nav-bar ul li a:hover{
+    color: blue;
+    text-decoration: underline;
+    
+}
+.nav-bar ul li a:active{
+    color: green;
+}
+.banner1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(169, 169, 169, 0.39);
+}
+.banner2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3.125rem;
+}
+.button:hover{
+    background-color: green;
+}
+.noticias1{
+    text-align: center;
+    margin-top: 20px;
+
+}
+.pseudoletra span{
+    font-size: 40px;
+    font-style: italic;
+    color: green;
+
+
+}
+.inicio{
+    width: 100%;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-flow: row ;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.galeria div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.galeria img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    margin: 50px;
+}
+.noticia{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.noticia img{
+    border-radius: 50px;
+    width: 800px;
+    height: 600px;
+    padding: 0px 20px 20px 20px;
+
+}
+.texto-noticia{
+    text-align: center;
+    padding: 0px 40px 40px ;
+    font-style: italic;
+}
+
+.galeria div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 300px;
+    height: 300px;
+    
+}
+
+.mision div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "mision1 mision2 mision2 mision4" 
+    "mision1 mision2 mision2 mision4"
+    "mision1 mision3 mision3 mision4"
+    "mision1 mision3 mision3 mision4";
+    justify-content:space-between;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+
+.mision img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover ;
+}
+}
+.mision img:nth-child(:first-child){
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+.mision img:nth-child(2){
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+.mision img:nth-child(3){
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+.mision img:nth-child(4){
+    grid-column: 1/4;
+    grid-row: 4/5;
+}
+.texto-mision{
+    margin-top: 1.875rem;
+    padding-top: 30px;
+}
+.texto-mision h1{
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+
+
+}
+.mision1{
+grid-area: mision1;
+}
+.mision1:hover::before{
+    content: "Lorem ipsum dolor sit amet consectetur adipiscing, elit parturient consequat fames nisl donec, sem morbi litora venenatis orci. Eros penatibus laoreet fusce pharetra nulla lobortis faucibus, eu mollis duis ante congue diam odio, ullamcorper lectus justo viverra mus ultricies.";
+    color: white;
+    transition: 1s;
+    border-radius: 50%;
+}
+.mision1 img{
+    width: 500px;
+    height: 500px;
+}
+.mision2{
+grid-area: mision2;
+}
+.mision2:hover::before{
+    content: "Lorem ipsum dolor sit amet consectetur adipiscing, elit parturient consequat fames nisl donec, sem morbi litora venenatis orci. Eros penatibus laoreet fusce pharetra nulla lobortis faucibus, eu mollis duis ante congue diam odio, ullamcorper lectus justo viverra mus ultricies.";
+    color: white;
+}
+.mision2 img{
+    width: 500px;
+    height: 500px;
+}
+.mision3{
+grid-area: mision3;
+}
+.mision3:hover::before{
+    content: "Lorem ipsum dolor sit amet consectetur adipiscing, elit parturient consequat fames nisl donec, sem morbi litora venenatis orci. Eros penatibus laoreet fusce pharetra nulla lobortis faucibus, eu mollis duis ante congue diam odio, ullamcorper lectus justo viverra mus ultricies.";
+    color: white;
+}
+.mision3 img{
+    width: 500px;
+    height: 600spx;
+}
+.mision4{
+grid-area: mision4;
+}
+.mision4:hover::before{
+    content: "Lorem ipsum dolor sit amet consectetur adipiscing, elit parturient consequat fames nisl donec, sem morbi litora venenatis orci. Eros penatibus laoreet fusce pharetra nulla lobortis faucibus, eu mollis duis ante congue diam odio, ullamcorper lectus justo viverra mus ultricies.";
+    color: white;
+}
+.mision4 img{
+    width: 500px;
+    height: 500px;
+}
+.contactos{
+    background-image: url("../assets/img/fondo-de-pantalla-contactos.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    width: 100%;
+    flex-wrap: nowrap;
+    
+}
+.inicio{
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+.section-principal{
+    width: 100%;
+    height: 100px;
+    margin: 3.125rem;
+}
+.section-secundaria{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.section-secundaria article{
+    width: 300px;
+    color: white;
+    background-color: rgb(26, 24, 24);
+    font-size: 16px;
+    flex-direction: row;
+    margin: 50px;
+
+}
+.section-secundaria article figure img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    margin: auto;
+}
+
+
+.section-secundaria h2{
+    text-align: center;
+    font-size: 2em;
+}
+.section-secundaria h3{
+    text-align: center;
+    font-size: 1em;
+}
+.section-secundaria p{
+    font-size: 16px;
+}
+.noticias1 img{
+    width: 300px;
+}
+.noticias1 h1{
+    text-align: center;
+    font-size: 3rem;
+}
+.noticias1 h2{
+    text-align: center;
+    font-size: 2rem;
+}
+.noticias1 p{
+    text-align: start;
+}
+.noticias1 article figure img{
+    width: 300px;
+    height: 200px;
+    
+}
+footer{
+    background-color: black;
+    color: white;
+}
+.footer{
+    display: flex;
+    flex-direction:row;
+    
+    justify-content: space-around;
+
+}
+.redes ul li a img{
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+.redes-c  li{
+    display: inline
+}
+.redes li img{
+    width: 100px;
+    flex-direction: row-reverse;
+
+}
+.redes-c li img{
+    width: 100px;
+    flex-direction: row-reverse;
+
+}
+.whatsapp{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+.whatsapp img{
+    width: 65px;
+    gap: 1.25rem;
+}
+.main-galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "1 2 3 4 5 "
+    "1 2 3 4 5"
+    "1 2 3 4 5"
+    "1 2 3 4 5 "
+    "1 2 3 4 5"
+    ;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.imagen-galeria1 img{
+    width: 300px;
+    height: 300px;
+}
+.imagen-galeria2 img{
+    width: 300px;
+    height: 300px;
+}
+.imagen-galeria3 img{
+    width: 300px;
+    height: 300px;
+}
+.imagen-galeria4 img{
+    width: 300px;
+    height: 300px;
+}
+.imagen-galeria5 img{
+    width: 300px;
+    height: 300px;
+}
+.imagen-galeria1 img:hover{
+    width: 300px;
+    height: 300px;
+    transform: translate(30%, 50%);
+    transition-duration: 1s ;
+    border-radius: 50%;
+}
+.imagen-galeria2 img:hover{
+    width: 300px;
+    height: 300px;
+    transform: translate(30%, 50%);
+    transition-duration: 1s ;
+    border-radius: 50%;
+}
+.imagen-galeria3 img:hover{
+    width: 300px;
+    height: 300px;
+    transform: translate(10%, 50%);
+    transition-duration: 1s ;
+    border-radius: 50%;
+}
+.imagen-galeria4 img:hover{
+    width: 300px;
+    height: 300px;
+    transform: translate(10%, 50%);
+    transition-duration: 1s ;
+    border-radius: 50%;
+}
+.imagen-galeria5 img:hover{
+    width: 300px;
+    height: 300px;
+    transform: translate(10%, 50%);
+    transition-duration: 1s ;
+    border-radius: 50%;
+}
+@media all and (max-width:1024px){
+    .header{
+        background-color: rgba(0, 0, 0, 0.452);
+        justify-content: space-around;
+
+    }
+}
+
+    main{
+        width: 100%;
+        background-image: url("../assets/img/fondo-de-pantalla-inicio.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: repeat;
+}
+
+@media all and (max-width:768px){
+    .header{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+}
+@media all and (max-width:375px){}
